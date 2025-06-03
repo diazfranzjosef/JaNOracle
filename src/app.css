@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+:root {
+  --bg: #ffffff;
+  --text: #111111;
+  --button-bg: #333;
+  --button-text: #ffffff;
+}
+
+[data-theme='dark'] {
+  --bg: #111111;
+  --text: #ffffff;
+  --button-bg: #ddd;
+  --button-text: #000000;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.3s, color 0.3s;
+}
