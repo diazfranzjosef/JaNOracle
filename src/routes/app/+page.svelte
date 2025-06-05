@@ -13,7 +13,6 @@
   let loading = false;
   let suggestions: string[] = [];
 
-  // Subscribe to suggestions store
   $: suggestedQuestions.subscribe((list) => {
     suggestions = list;
   });
